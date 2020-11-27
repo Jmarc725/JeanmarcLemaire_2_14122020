@@ -1,11 +1,15 @@
 /* header */
 
 body {
-    width: 85%;
     margin: auto;
     font-family: raleway;
     font-size: 0.9em;
     color: black;
+}
+
+header {
+    width: 90%;
+    margin: auto;
 }
 
 #en_tete {
@@ -138,15 +142,15 @@ input {
 
 aside {
     background-color: #f2f2f2;
-    width: 400px;
-    padding-left: 40px;
-    margin-left: -40px;
+    height: 600px;
 }
+
 #titre_populaire {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92%;
+    margin: auto;
+    width: 90%;
 }
 
 #titre_populaire i {
@@ -158,13 +162,16 @@ aside {
     display: flex;
     justify-content: flex-start;
     width: 90%;
-    margin: 0;
+    margin: auto;
+    margin-bottom: 10px;
     background-color: white;
     padding: 5px;
-    padding-bottom: 1px;
     border-radius: 20px;
 }
 
+#hotel_populaire {
+
+}
 .infos_populaires {
     padding-left: 20px;
     margin: 0;
@@ -175,9 +182,11 @@ aside {
     margin-bottom: 7px;
 }
 
-#hotel_populaire img {
-    width: 205px;
+.bulle_populaire img {
+    width: 190px;
+    height: 190px;
     object-fit: cover;
+    object-position: bottom;
 }
 
 .infos_populaires i {
@@ -186,7 +195,7 @@ aside {
 }
 .photo {
     width: 140px;
-    height: 140px;
+    height: 145px;
     border: #f2f2f2;
     border-radius: 15px 0 0 20px;
     overflow: hidden;
@@ -201,8 +210,6 @@ footer {
     padding-top: 30px;
     padding-bottom: 40px;
     padding-left: 40px;
-    margin-left: -40px;
-
 }
 
 footer ul {
