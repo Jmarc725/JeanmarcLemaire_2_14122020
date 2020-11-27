@@ -1,0 +1,219 @@
+/* header */
+
+body {
+    width: 85%;
+    margin: auto;
+    font-family: raleway;
+    font-size: 0.9em;
+    color: black;
+}
+
+#en_tete {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#en_tete a {
+    color: #0065FC;
+    font-size: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+    padding-bottom: 10px;
+}
+
+ul, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    color: green;
+}
+
+i {
+    color: #0065FC;
+}
+
+h1 {
+font-size: 1.4em;;
+font-weight: 600;
+margin-top: 30px;
+}
+
+h2 {
+font-size: 1.3em;
+}
+
+#champs_recherche {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#champs_recherche i {
+    color: black;
+    background-color: #f2f2f2;
+    padding: 17px;
+    border-radius: 15px 0 0 15px;
+}
+
+#loupe i {
+    padding: 17px;
+    margin-left: -10px;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 15px;
+}
+
+input {
+    width: 300px;
+    height: 48px;
+    margin-left: - 10px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    border-left: none;
+    border-right: none;
+    border: 0.4px solid #f2f2f2;
+}
+
+#filtres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#filtres a {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 13px 22px 13px 60px;
+    border: 1px solid rgb(180,180,180);
+    border-left: none;
+    border-radius: 30px;
+    margin-left: -45px;
+}
+
+#filtres i {
+    background-color:#DEEBFF;
+    padding: 18px;
+    border-radius: 30px;
+}
+
+.icone {
+    margin-right: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+#infos {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#infos i {
+    padding: 7px 12px 7px 12px;
+    margin-top: 6px;
+    margin-right: 10px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+}
+
+
+
+/* Aside */
+
+aside {
+    background-color: #f2f2f2;
+    width: 400px;
+    padding-left: 40px;
+    margin-left: -40px;
+}
+#titre_populaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+}
+
+#titre_populaire i {
+    color: black;
+    padding-top: 18px;
+}
+
+.bulle_populaire {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0;
+    background-color: white;
+    padding: 5px;
+    padding-bottom: 1px;
+    border-radius: 20px;
+}
+
+.infos_populaires {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.infos_populaires h2, .infos_populaires p {
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+#hotel_populaire img {
+    width: 205px;
+    object-fit: cover;
+}
+
+.infos_populaires i {
+    margin-top: 35px;
+    background-repeat: repeat-x 5;
+}
+.photo {
+    width: 140px;
+    height: 140px;
+    border: #f2f2f2;
+    border-radius: 15px 0 0 20px;
+    overflow: hidden;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    margin-left: -40px;
+
+}
+
+footer ul {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+footer li {
+    padding: 5px 0;
+}
+
+.titre {
+    margin-bottom: 30px;
+}
