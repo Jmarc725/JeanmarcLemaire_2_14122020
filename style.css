@@ -150,7 +150,6 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
     width: 90%;
 }
 
@@ -252,7 +251,41 @@ h1 {
     margin-bottom: 4px;
 }
 
+#afficher_plus {
+    padding: 20px;
+}
+
+
+/* Section Activites */
+
+#activites_marseille {
+    margin-bottom: 50px;
+}
+
+.bulle_activite {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px #f2f2f2;
+}
+
+.photo_activite img {
+    width: 360px;
+    height: 150px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+
+.bulle_activite h2 {
+    padding-left: 20px;
+}
+
+
 /* Footer */
+
 footer {
     background-color: #f2f2f2;
     width: 400px;
