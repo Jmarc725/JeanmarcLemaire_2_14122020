@@ -98,17 +98,25 @@ input {
 #filtres {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-#filtres a {
+.bulle_filtre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 12px;
+    border: 1px solid #f2f2f2;
+    border-radius: 35px;
+
+}
+
+.bulle_filtre a {
     font-size: 1.2em;
-    font-weight: bold;
-    padding: 13px 22px 13px 60px;
-    border: 1px solid rgb(180,180,180);
-    border-left: none;
-    border-radius: 30px;
-    margin-left: -45px;
+    font-weight: 600;
+    padding-right: 20px;
+    margin-left: 3px;
 }
 
 #filtres i {
@@ -119,9 +127,9 @@ input {
 
 .icone {
     margin-right: 12px;
-    margin-bottom: 12px;
     align-items: center;
 }
+
 
 #infos {
     display: flex;
@@ -167,6 +175,11 @@ aside {
     background-color: white;
     padding: 5px;
     border-radius: 20px;
+    box-shadow: 0 6px 8px #f2f2f2;
+}
+
+.etoile_grise {
+    
 }
 
 #hotel_populaire {
@@ -255,6 +268,10 @@ h1 {
     padding: 20px;
 }
 
+#e {
+    color: back;
+}
+
 
 /* Section Activites */
 
@@ -305,4 +322,18 @@ footer li {
 
 .titre {
     margin-bottom: 30px;
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
 }
