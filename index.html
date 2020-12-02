@@ -13,13 +13,14 @@
         <header>
             <div id="en_tete">
             <img src="images/logo/Reservia.svg" alt="Reservia">
-            <a href="#">S'inscrire</a>
+            <a href="#" class="sign-in-mobile">S'inscrire</a>
             </div>
             
             <nav>
             <ul>
                 <li><a href="#">Hébergements</a></li>
                 <li><a href="#">Activités</a></li>
+                <li class="sign-in-tablet"><a href="#">S'inscrire</a></li>
             </ul>
             </nav>
         
@@ -27,16 +28,16 @@
             <p>En plein centre ville ou en pleine nature</p>
         
             <div id="champs_recherche">
-                <i class="fas fa-map-marker-alt"></i>                
+                <i class="fas fa-map-marker-alt champs_recherche-map-marker"></i>                
                 <form method="post" action="traitement php">
-                    <p>
+                    <!-- <p> -->
                         <label for="search"></label>
                         <input type="search" name="search" id="search" placeholder="Marseille, France">
-                    </p>
+                    <!-- </p> -->
                 </form>
-                <div id="loupe">
-                    <i class="fas fa-search"></i>
-                </div>
+                <!-- <div id="loupe"> -->
+                    <i class="fas fa-search champs_recherche-loupe"></i>
+                <!-- </div> -->
             </div>
             <h2>Filtres</h2>
             <div id="filtres">
