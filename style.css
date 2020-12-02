@@ -323,17 +323,3 @@ footer li {
 .titre {
     margin-bottom: 30px;
 }
-
-
-
-@media screen and (min-width: 1280px) {
-    
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    nav li {
-        margin-right: 20px;
-    }
-}
