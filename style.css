@@ -18,7 +18,7 @@
 body {
     margin: auto;
     font-family: raleway;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
 
 #en_tete a {
     color: #0065FC;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -64,12 +64,12 @@ a:hover {
     margin-bottom: 40px;
 }
 h1 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 ul, a {
@@ -133,11 +133,11 @@ i {
 input {
     width: 300px;
     height: 48px;
-    padding-left: 10px;
-    font-size: 1.2em;
+    padding-left: 40px;
+    font-size: 1.1em;
     border-left: none;
     border-right: none;
-    border: 0.4px solid blue;
+    border: 0.4px solid #f2f2f2;
     width: 100%;
     border-radius: 15px;
 }
@@ -161,16 +161,16 @@ input:focus {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 15px;
     margin-bottom: 15px;
     border: 1px solid #f2f2f2;
     border-radius: 35px;
 }
 
 .bulle_filtre a {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
-    padding-right: 25px;
+    padding-right: 20px;
     padding-left: 15px;
 }
 
@@ -182,7 +182,6 @@ input:focus {
 }
 
 .icone {
-    margin-right: 12px;
     align-items: center;
 }
 
@@ -191,6 +190,7 @@ input:focus {
     display: flex;
     align-items: flex-start;
     margin-top: 20px;
+    padding-right: 10px;
 }
 
 #infos i {
@@ -206,7 +206,7 @@ input:focus {
 
 aside {
     background-color: #f2f2f2;
-    height: 680px;
+    height: 600px;
 }
 
 #les_plus_populaires {
@@ -244,7 +244,7 @@ aside {
 }
 
 .bulle_populaire img {
-    width: 250px;
+    width: 100%;
     height: 190px;
     object-fit: cover;
     object-position: bottom;
@@ -255,8 +255,8 @@ aside {
     background-repeat: repeat-x 5;
 }
 .photo {
-    width: 180px;
-    height: 170px;
+    width: 140px;
+    height: 140px;
     border: #f2f2f2;
     border-radius: 15px 0 0 20px;
     overflow: hidden;
@@ -301,20 +301,22 @@ h1 {
 
 .photo_hebergement img {
     width: 100%;
-    height: 175px;
+    height: 165px;
     border-radius: 12px 12px 0 0;
     object-fit: cover;
     object-position: bottom;
 }
 
 .infos_hebergements {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     padding-left: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
-.infos_hebergements h2, .infos_hebergements p {
-    margin-top: 5px;
-    margin-bottom: 4px;
+.infos_hebergements h2 {
+    margin-bottom: 0;
 }
 
 #afficher_plus {
@@ -385,6 +387,18 @@ padding-left: 40px;
 
     .sign-in-tablet {
         display: initial;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav li {
+        margin-right: 30px;
     }
 }
 
