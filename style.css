@@ -21,6 +21,27 @@ body {
     font-size: 0.9em;
 }
 
+h1 {
+    font-size: 1.4em;
+    font-weight: 600;
+    padding-left: 25px;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+ul, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+i {
+    color: #0065FC;
+}
+
 header {
     width: 90%;
     margin: auto;
@@ -55,6 +76,7 @@ nav a:hover {
     border-bottom: 2px solid #0065FC;
     padding-bottom: 10px;
 }
+
 a:hover {
     color: green;
 }
@@ -63,24 +85,9 @@ a:hover {
     margin-top: 30px;
     margin-bottom: 40px;
 }
-h1 {
-    font-size: 1.4em;
-    font-weight: 600;
-}
 
-h2 {
-    font-size: 1.1em;
-}
-
-ul, a {
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-    font-size: 1.1em;
-}
-
-i {
-    color: #0065FC;
+.titre_principal h1 {
+    margin-left: -30px;
 }
 
 
@@ -214,7 +221,6 @@ aside {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: auto;
 }
 
 #les_plus_populaires i {
@@ -254,6 +260,7 @@ aside {
     margin-top: 35px;
     background-repeat: repeat-x 5;
 }
+
 .photo {
     width: 140px;
     height: 140px;
@@ -273,11 +280,6 @@ aside {
 
 h1 {
     /* padding-left: 20px; */
-}
-
-.titre-h1-retrait-gauche {
-    font-size: 1.6em;
-    padding-left: 25px;
 }
 
 .bulle_hebergement {
@@ -320,7 +322,7 @@ h1 {
 }
 
 #afficher_plus {
-    padding: 25px;
+    padding: 40px;
 }
 
 
@@ -389,6 +391,11 @@ padding-left: 40px;
         display: initial;
     }
 
+    header {
+        width: 95%;
+        margin: auto;
+    }
+
     nav ul {
         display: flex;
         justify-content: flex-end;
@@ -399,6 +406,78 @@ padding-left: 40px;
 
     nav li {
         margin-right: 30px;
+    }
+
+    .champs_recherche {
+        width: 30%;
+    }
+
+    .filtre {
+        display: flex;
+    }
+
+
+
+                                        /*  aside tablette */
+
+
+    aside {
+        width: 95%;
+        margin: auto;
+        height: auto;
+        border-radius: 20px;
+    }
+
+
+    #wrapper_populaire {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        margin-right: 15px;
+    }
+
+    .bulle_populaire {
+        width: 30%;
+        justify-content: space-evenly;
+    }
+
+
+                                        /*   section hebergement tablette  */
+
+    #hebergement_marseille {
+        background-color: #f2f2f2;
+        width: 95%;
+        margin: auto;
+        height: auto;
+        border-radius: 3%;;
+    }
+    .wrapper_hebergement {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+    }
+
+    .bulle_hebergement {
+        width: 30%;
+        justify-content: space-evenly;
+    }
+
+
+                                        /*   section activite tablette */
+
+    .wrapper_activite {
+        display: flex;
+        width: 95%;
+        margin: auto;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    .rubrique {
+        width: 33%;
     }
 }
 
