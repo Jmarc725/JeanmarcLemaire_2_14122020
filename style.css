@@ -75,8 +75,8 @@ nav ul {
 
 nav a:hover {
     color: #0065FC;
-    border-bottom: 2px solid #0065FC;
-    padding-bottom: 10px;
+    border-top: 3px solid #0065FC;
+    padding-top: 30px;
 }
 
 a:hover {
@@ -384,14 +384,14 @@ padding-left: 40px;
     }
 
     header {
-        width: 95%;
+        /* width: 95%; */
         margin: auto;
     }
 
     nav ul {
         display: flex;
         justify-content: flex-end;
-        position: absolute;
+        /* position: absolute; */
         top: 20px;
         right: 20px;
     }
@@ -477,12 +477,17 @@ padding-left: 40px;
 
 @media screen and (min-width: 1024px) {
 
-    
+    #site-voyage {
+        width: 95%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .champs_recherche {
         width: 25%;
         margin-bottom: 40px;
-        padding-left: 25px;
+        /* padding-left: 25px; */
     }
 
     .champs_recherche-loupe {
@@ -509,6 +514,7 @@ padding-left: 40px;
         flex-direction: row;
         width: auto;
         margin-bottom: 30px;
+        flex-direction: row-reverse;
     }
 
     #hebergement_marseille {
@@ -559,16 +565,51 @@ padding-left: 40px;
     }
 
     .wrapper_activite {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 30px;
-        width: auto;
-        margin-left: 30px; 
-        margin-right: 30px;
-        margin-top: 30px;
+        display: flex;
+        /* grid-template-columns: auto auto auto auto; */
+        /* grid-template-columns: repeat(4, 300px);
+        grid-template-rows: 240px 70px 30px 100px 50px 50px; */
+        /* grid-gap: 30px; */
+        /* width: auto; */
+        /* margin-left: 30px; 
+        margin-right: 30px; */
+        /* margin-top: 30px; */
+        /* grid-template-areas: 
+            "bulle1 bulle2 bulle4 bulle5"
+            "bulle1 bulle2 bulle4 bulle5"
+            "bulle1 bulle2 bulle4 bulle6"
+            "bulle1 bulle3 bulle4 bulle6"
+            ; */
    }
 
-    .bulle_activite_1 {
+   .bulle_activite_1 {
+       grid-area: bulle1;
+       /* height: 100%; */
+   }
+
+   .bulle_activite_2 {
+        grid-area: bulle2;
+   }
+   .bulle_activite_3 {
+        grid-area: bulle3;
+   }
+   .bulle_activite_4 {
+        grid-area: bulle4;
+        /* height: 100%; */
+   }
+   .bulle_activite_5 {
+        grid-area: bulle5;
+   }
+   .bulle_activite_6 {
+        grid-area: bulle6;
+   }
+
+   .photo_activite img {
+       /* height: 100%; */
+   }
+    
+
+    /* .bulle_activite_1 {
       grid-row: 1 /3;
     }
 
@@ -589,7 +630,7 @@ padding-left: 40px;
     .bulle_activite_2 img, .bulle_activite_3 img, .bulle_activite_5 img, .bulle_activite_6 img {
         height: 185px;
         object-fit: cover;
-    }
+    } */
       
 
     .bulle_activite_1, .bulle_activite_2, .bulle_activite_3, .bulle_activite_4, .bulle_activite_5, .bulle_activite_6 {
