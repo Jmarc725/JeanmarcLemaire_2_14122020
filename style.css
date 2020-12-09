@@ -16,19 +16,32 @@
                                     /*    header     */
 
 body {
-    margin: auto;
     font-family: raleway;
     font-size: 0.9em;
+    margin: auto;
 }
 
 h1 {
     font-size: 1.4em;
     font-weight: 600;
-    padding-left: 25px;
 }
 
 h2 {
     font-size: 1.1em;
+}
+
+h1, .chapeau p, #infos i, .afficher {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reservia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin: 20px;
 }
 
 ul, a {
@@ -38,28 +51,8 @@ ul, a {
     font-size: 1.1em;
 }
 
-i {
+i, .sign-in-mobile {
     color: #0065FC;
-}
-
-#en_tete {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-#en_tete a {
-    color: #0065FC;
-    font-weight: bold;
-}
-
-.retrait {
-    padding-left: 25px;
-    padding-bottom: 15px;
 }
 
 .sign-in-tablet {
@@ -70,16 +63,17 @@ nav ul {
     display: flex;
     justify-content: space-around;
     padding-left: 0;
+    margin-bottom: 40px;
 }
 
-nav a:hover {
+nav a:hover, {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
-    padding-top: 30px;
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 25px;
 }
 
 a:hover {
-    color: green;
+    color: grey;
 }
 
 
@@ -113,6 +107,12 @@ a:hover {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     top: 0;
+}
+
+.fa-map-marker-alt:before, .fa-search:before {
+    position: absolute;
+    top: 15px;
+    left: 15px;
 }
 
 .champs_recherche-loupe {
@@ -195,8 +195,6 @@ input:focus {
 #infos {
     display: flex;
     align-items: center;
-    width: 90%;
-    margin: auto;
 }
 
 #infos i {
@@ -206,23 +204,26 @@ input:focus {
     border-radius: 50px;
 }
 
+#infos p {
+    margin-right: 30px;
+}
 
 
                                     /*    Aside    */
 
 aside {
     background-color: #f2f2f2;
-    padding-bottom: 10px;
+    padding-bottom: 15px;;
 }
 
 #les_plus_populaires {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
 }
 
-#les_plus_populaires i {
+.fa-chart-line:before {
+    margin-right: 20px;
     color: black;
 }
 
@@ -239,22 +240,22 @@ aside {
     box-shadow: 0 8px 8px rgb(230,230,230);
 }
 
-.infos_populaires {
-    margin-left: 10px;
-}
-
 .bulle_populaire img {
     width: 150px;
-    height: 150px;;
+    height: 150px;
     object-fit: cover;
     object-position: bottom;
-    border-radius: 12px 0 0 12px;;
+    border-radius: 12px 0 0 12px;
 }
 
-.infos_populaires i {
-    margin-top: 25px;
-    background-repeat: repeat-x 5;
+.infos_populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+    padding-right: 20px;
 }
+
 
 .etoile_grise {
     color: #f2f2f2;
@@ -300,9 +301,6 @@ aside {
     margin: 7px 0;
 }
 
-.afficher {
-    padding: 20px 0 25px 25px;
-}
 
 
 
