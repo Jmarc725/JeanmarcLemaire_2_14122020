@@ -24,14 +24,20 @@ body {
 h1 {
     font-size: 1.4em;
     font-weight: 600;
+    margin: 30px 25px 20px;
 }
 
 h2 {
     font-size: 1.2em;
 }
 
-h1, .chapeau p, .afficher {
-    margin: 40px 20px 20px;
+.afficher {
+    margin-left: 25px;
+}
+
+.chapeau p {
+    margin-top: -10px;
+    padding-left: 25px;
 }
 
 .reservia {
@@ -64,7 +70,7 @@ nav ul {
     margin-bottom: 30px;
 }
 
-nav a:hover, {
+nav a:hover {
     color: #0065FC;
     border-bottom: 3px solid #0065FC;
     padding-bottom: 25px;
@@ -364,6 +370,7 @@ padding-left: 40px;
                                     /*   Tablet   */
 
 @media screen and (min-width: 768px) {
+    
     .sign-in-mobile {
         display: none;
     }
@@ -372,31 +379,51 @@ padding-left: 40px;
         display: initial;
     }
 
-    header {
-        /* width: 95%; */
-        margin: auto;
+    #en_tete {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
     }
 
     nav ul {
         display: flex;
         justify-content: flex-end;
         /* position: absolute; */
-        top: 20px;
-        right: 20px;
     }
 
     nav li {
         margin-right: 30px;
     }
 
+    nav a:hover {
+        border-top: 3px solid #0065FC;
+        padding-top: 30px;
+        border-bottom: none;
+    }
+
     .champs_recherche {
-        width: 30%;
+        width: 40%;
+    }
+
+    .champs_recherche-loupe {
+        width: 130px;
+    }
+
+    .fa-search:before {
+        display: none;
+    }
+    
+    .rechercher {
+        display: initial;
+        position: absolute;
+        top: 0px;
+        right: 30px;
     }
 
     .filtre {
         display: flex;
     }
-
 
 
                                         /*  aside tablette */
@@ -405,20 +432,39 @@ padding-left: 40px;
     aside {
         width: 95%;
         margin: auto;
-        height: auto;
         border-radius: 20px;
     }
 
-
-    #wrapper_populaire {
+    .wrapper_populaire {
         display: flex;
         flex-direction: row;
-        padding-left: 10px;
+        justify-content: space-evenly;
+        width: 95%;
+        margin: auto;
     }
 
     .bulle_populaire {
         width: 30%;
-        justify-content: flex-start;
+        height: 110px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .bulle_populaire img {
+        width: 90px;
+        height: 110px;
+    }
+
+    .infos_populaires {
+        padding: 0 5px 0 5px;
+    }
+
+    .infos_populaires h2, .etoile {
+        font-size: 0.8em;
+    }
+
+    .infos_populaires p {
+        font-size: 0.7em;
     }
 
 
@@ -427,12 +473,15 @@ padding-left: 40px;
     #hebergement_marseille {
         background-color: #f2f2f2;
         width: 95%;
-        margin: auto;
-        height: auto;
-        border-radius: 3%;;
+        margin: 20px auto;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        border-radius: 3%;
     }
+    
     .wrapper_hebergement {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 95%;
         margin: auto;
@@ -440,7 +489,21 @@ padding-left: 40px;
 
     .bulle_hebergement {
         width: 30%;
-        justify-content: space-evenly;
+        height: 235px;
+    }
+
+    .bulle_hebergement img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .infos_hebergements {
+        padding-top: 10px;
+    }
+
+    .infos_hebergements h2, .etoile {
+        font-size: 1em;
     }
 
 
@@ -452,26 +515,30 @@ padding-left: 40px;
         margin: auto;
     }
 
+    .rubrique {
+        width: 33%;
+    }
+
+
+
+                                    /*   footer tablette   */
+
+    
     footer {
         display: flex;
     }
 
-    .rubrique {
-        width: 33%;
-    }
-}
+    footer li {
+        font-size: 0.9em;
+    }     
+        
+}                           
 
 
                                     /* Desktop */
 
 @media screen and (min-width: 1024px) {
 
-    #site-voyage {
-        width: 95%;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .champs_recherche {
         width: 25%;
