@@ -445,6 +445,14 @@ padding-left: 40px;
         margin: auto;
     }
 
+    .fa-chart-line::before {
+        margin-right: 35px;
+    }
+
+    .main-section h1, .afficher {
+        padding-left: 6px;
+    }
+
     .bulle_populaire {
         width: 30%;
         height: 110px;
