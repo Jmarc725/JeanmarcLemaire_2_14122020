@@ -407,7 +407,7 @@ padding-left: 40px;
     }
 
     .champs_recherche-loupe {
-        width: 130px;
+        width: 110px;
     }
 
     .fa-search:before {
@@ -418,7 +418,9 @@ padding-left: 40px;
         display: initial;
         position: absolute;
         top: 0px;
-        right: 30px;
+        right: 10px;
+        color: white;
+        font-weight: 600;
     }
 
     .filtre {
@@ -456,10 +458,10 @@ padding-left: 40px;
     }
 
     .infos_populaires {
-        padding: 0 5px 0 5px;
+        padding: 0 0 5px 10px;
     }
 
-    .infos_populaires h2, .etoile {
+    .infos_populaires h2, .icone-etoile {
         font-size: 0.8em;
     }
 
@@ -489,12 +491,12 @@ padding-left: 40px;
 
     .bulle_hebergement {
         width: 30%;
-        height: 235px;
+        height: 205px;
     }
 
     .bulle_hebergement img {
         width: 200px;
-        height: 150px;
+        height: 120px;
         object-fit: cover;
     }
 
@@ -529,7 +531,7 @@ padding-left: 40px;
     }
 
     footer li {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }     
         
 }                           
@@ -650,9 +652,6 @@ padding-left: 40px;
         grid-area: bulle6;
    }
 
-   .photo_activite img {
-       /* height: 100%; */
-   }
     
 
     /* .bulle_activite_1 {
