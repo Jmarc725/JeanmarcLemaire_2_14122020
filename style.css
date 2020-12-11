@@ -529,9 +529,95 @@ padding-left: 40px;
 
     .wrapper_activite {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 350px;
         width: 95%;
         margin: auto;
     }
+
+    .bulle_activite_1 {
+        width: 23%;
+        height: 320px;
+        margin-top: 0;
+        margin-right: 9px;
+    }
+    .bulle_activite_1 .photo_activite img {
+        height: 270px;
+    }
+ 
+    .bulle_activite_2 {
+         width: 23%;
+         height: 180px;
+         margin-top: 0;
+         margin-left: 9px;
+         margin-right: 9px;
+         margin-bottom: 20px;
+     }
+ 
+     .bulle_activite_2 .photo_activite img {
+         height: 130px;
+     }
+ 
+ 
+     .bulle_activite_3 {
+         width: 23%;
+         height: 120px;
+         margin-top: 0;   
+         margin-left: 9px;
+         margin-right: 9px;
+     }
+ 
+     .bulle_activite_3 .photo_activite img {
+         height: 70px;
+     }
+ 
+ 
+     .bulle_activite_4 {
+         width: 23%;
+         height: 320px;
+         margin-top: 0;   
+         margin-left: 9px;
+         margin-right: 9px;
+     }
+ 
+     .bulle_activite_4 .photo_activite img {
+         height: 270px;
+         margin-bottom: -10px;
+     }
+ 
+     .bulle_activite_5 {
+         width: 23%;
+         height: 180px; 
+         margin-top: 0;  
+         margin-left: 9px;
+         margin-right: 9px;
+         margin-bottom: 20px;
+     }
+ 
+     .bulle_activite_5 .photo_activite img {
+         height: 130px;
+     }
+ 
+     .bulle_activite_6 {
+         width: 23%;
+         height: 120px; 
+         margin-top: 0; 
+         margin-left: 9px; 
+     }
+ 
+     .bulle_activite_6 .photo_activite img {
+         height: 70px;
+     }
+
+     #activites_marseille h2 {
+         font-size: 1em;
+     }
+ 
+ 
+    
+   
+
 
     .rubrique {
         width: 33%;
