@@ -425,6 +425,11 @@ padding-left: 40px;
 
     .filtre {
         display: flex;
+        align-items: flex-start;
+    }
+
+    .h1-filtres {
+        margin-top: 15px;
     }
 
 
@@ -550,8 +555,33 @@ padding-left: 40px;
 @media screen and (min-width: 1024px) {
 
 
+    #site-voyage {
+        width: 97%;
+        margin: auto;
+    }
+
+    .reservia img {
+         width: 150px;
+   }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 , footer h2, .main-section h2 {
+        font-size: 1.4em;
+    }
+
+    .main-section p, .etoile, .icone-etoile {
+        font-size: 1.1em;
+    }
+
+    li, footer li {
+        font-size: 1.2em;
+    }
+
     .champs_recherche {
-        width: 25%;
+        width: 27%;
         margin-bottom: 40px;
         /* padding-left: 25px; */
     }
@@ -560,12 +590,24 @@ padding-left: 40px;
         display: none;
     }
 
+    .champs_recherche-loupe {
+        width: 145px;
+    }
+
     .rechercher {
         display: initial;
+        top: -2px;
+        right: 20px;
+        font-size: 1.2em;
+    }
+
+    .filtre {
+        display: flex;
+        align-items: center;
     }
 
     .bulle_filtre {
-        margin-right: 40px;;
+        margin-right: 40px;
     }
 
     .bulle_filtre a {
@@ -575,19 +617,36 @@ padding-left: 40px;
         padding-right: 30px;
     }
 
+    .h1-filtres {
+        margin-top: 10px;
+    }
+
+
+                                        /*   main section   */
+
     .main-section {
         display: flex;
         flex-direction: row;
         width: auto;
+        margin: auto;
         margin-bottom: 30px;
         flex-direction: row-reverse;
     }
+
+    .main-section h1 {
+        padding-bottom: 20px;
+    }
+
 
     #hebergement_marseille {
         flex: 2;
         height: 700px;
         margin-left: 15px;
-        margin-right: 30px;
+        margin-right: 15px;
+    }
+
+    #hebergement_marseille h1, .afficher {
+        padding-left: 30px;
     }
 
     .wrapper_populaire {
@@ -616,6 +675,7 @@ padding-left: 40px;
         justify-content: space-between;    
     }
 
+    
     #afficher_plus {
         padding-top: 0px;
     }
