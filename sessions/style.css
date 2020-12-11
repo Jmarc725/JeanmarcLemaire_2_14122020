@@ -1,0 +1,60 @@
+.wrapper {
+    height: 300px;
+    width: 100%;
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .box-1 {
+    height: 300px;
+    width: 30px;
+    background-color: tomato;
+    margin-left: 10px;
+    margin-right: 10px; 
+  }
+  
+  .box-2 {
+    height: 100px;
+    width: 30px;
+    background-color: tomato;
+    margin-left: 10px;
+    margin-right: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .box-3 {
+    height: 100px;
+    width: 30px;
+    background-color: tomato;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .box-4 {
+    height: 300px;
+    width: 30px;
+    background-color: tomato;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .box-5 {
+    height: 100px;
+    width: 30px;
+    background-color: tomato;
+    margin-left: 10px;
+    margin-right: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .box-6 {
+    height: 150px;
+    width: 30px;
+    background-color: tomato;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+    
