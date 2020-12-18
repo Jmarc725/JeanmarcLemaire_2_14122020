@@ -279,6 +279,7 @@ aside {
   height: 260px;
   background-color: white;
   width: 90%;
+  padding: 5px;
   margin: auto;
   margin-bottom: 25px;
   box-shadow: 0 8px 8px rgb(230, 230, 230);
@@ -290,7 +291,7 @@ aside {
 }
 
 .photo_hebergement img {
-  width: 95%;
+  width: 100%;
   height: 150px;
   border-radius: 12px 12px 0 0;
   object-fit: cover;
@@ -679,7 +680,6 @@ footer li {
   }
 
   .bulle_hebergement img {
-    width: 100%;
     height: 90px;
     margin-top: -5px;
   }
